@@ -1,7 +1,7 @@
 
 import { StudentCard } from "@/components/student-card";
 
-// Sample student data
+// Sample student data for homepage display
 const STUDENTS = [
   {
     id: "1",
@@ -110,10 +110,14 @@ const STUDENTS = [
   }
 ];
 
-export function StudentGrid() {
+interface StudentGridProps {
+  students?: typeof STUDENTS;
+}
+
+export function StudentGrid({ students = STUDENTS }: StudentGridProps) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      {STUDENTS.map((student) => (
+      {students.map((student) => (
         <StudentCard key={student.id} {...student} />
       ))}
     </div>

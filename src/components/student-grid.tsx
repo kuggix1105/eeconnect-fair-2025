@@ -12,12 +12,12 @@ const STUDENTS = [
     cv: "#",
     socialLinks: [
       {
-        type: "linkedin",
+        type: "linkedin" as const,
         url: "#",
         label: "LinkedIn"
       },
       {
-        type: "github",
+        type: "github" as const,
         url: "#",
         label: "GitHub"
       }
@@ -32,7 +32,7 @@ const STUDENTS = [
     cv: "#",
     socialLinks: [
       {
-        type: "linkedin",
+        type: "linkedin" as const,
         url: "#",
         label: "LinkedIn"
       }
@@ -47,12 +47,12 @@ const STUDENTS = [
     cv: "#",
     socialLinks: [
       {
-        type: "github",
+        type: "github" as const,
         url: "#",
         label: "GitHub"
       },
       {
-        type: "linkedin",
+        type: "linkedin" as const,
         url: "#",
         label: "LinkedIn"
       }
@@ -67,7 +67,7 @@ const STUDENTS = [
     cv: "#",
     socialLinks: [
       {
-        type: "linkedin",
+        type: "linkedin" as const,
         url: "#",
         label: "LinkedIn"
       }
@@ -82,7 +82,7 @@ const STUDENTS = [
     cv: "#",
     socialLinks: [
       {
-        type: "linkedin",
+        type: "linkedin" as const,
         url: "#",
         label: "LinkedIn"
       }
@@ -97,12 +97,12 @@ const STUDENTS = [
     cv: "#",
     socialLinks: [
       {
-        type: "github",
+        type: "github" as const,
         url: "#",
         label: "GitHub"
       },
       {
-        type: "linkedin",
+        type: "linkedin" as const,
         url: "#",
         label: "LinkedIn"
       }

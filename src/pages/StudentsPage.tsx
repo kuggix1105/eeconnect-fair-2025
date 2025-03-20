@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { StudentGrid } from "@/components/student-grid";
@@ -92,7 +91,7 @@ const EXTENDED_STUDENTS = generateStudents();
 
 const StudentsPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const studentsPerPage = 16;
+  const studentsPerPage = 20;
   
   // Calculate the students to display on the current page
   const indexOfLastStudent = currentPage * studentsPerPage;
@@ -165,12 +164,14 @@ const StudentsPage = () => {
             <p className="text-muted-foreground text-center">Browse through our electrical engineering talent showcase</p>
           </div>
           
-          <div className="custom-student-grid">
-            <StudentGrid students={currentStudents} />
+          <div className="max-w-[1600px] mx-auto">
+            <div className="custom-student-grid">
+              <StudentGrid students={currentStudents} />
+            </div>
           </div>
           
           {/* Pagination */}
-          <div className="mt-12">
+          <div className="mt-12 flex justify-center">
             <Pagination>
               <PaginationContent>
                 {currentPage > 1 && (

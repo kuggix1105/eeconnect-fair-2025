@@ -1,4 +1,3 @@
-
 import { StudentCard } from "@/components/student-card";
 
 // Sample student data for homepage display
@@ -116,10 +115,12 @@ interface StudentGridProps {
 
 export function StudentGrid({ students = STUDENTS }: StudentGridProps) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <>
       {students.map((student) => (
-        <StudentCard key={student.id} {...student} />
+        <div key={student.id} className="w-full">
+          <StudentCard key={student.id} {...student} />
+        </div>
       ))}
-    </div>
+    </>
   );
 }

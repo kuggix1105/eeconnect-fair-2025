@@ -48,16 +48,16 @@ export function StudentCard({
     <>
       <Card 
         className={cn(
-          "overflow-hidden card-hover cursor-pointer",
+          "overflow-hidden card-hover cursor-pointer h-full",
           "bg-card/50 backdrop-blur-sm border border-border/50"
         )}
         onClick={() => setIsDialogOpen(true)}
       >
-        <div className="aspect-square overflow-hidden">
+        <div className="relative aspect-square overflow-hidden">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            className="w-full h-full object-cover absolute inset-0 transition-transform duration-500 hover:scale-105"
           />
         </div>
         <CardContent className="p-5">

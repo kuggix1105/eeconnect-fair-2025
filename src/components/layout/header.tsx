@@ -36,11 +36,11 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center gap-2">
           <div className="relative w-10 h-10 flex items-center justify-center">
-            <div className="absolute inset-0 bg-[#ff0419] rounded-full opacity-30 animate-pulse-subtle"></div>
+            <div className="absolute inset-0 bg-blue-500 rounded-full opacity-30 animate-pulse-subtle"></div>
             <div className="relative z-10 font-bold text-lg tracking-tight text-foreground">EE</div>
           </div>
           <div>
-            <h1 className="text-2xl font-display font-bold tracking-tight bg-gradient-to-r from-[#ff0419] to-red-600 bg-clip-text text-transparent">
+            <h1 className="text-2xl font-display font-bold tracking-tight bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
               EESPIRE <span className="font-light">2025</span>
             </h1>
           </div>
@@ -73,14 +73,6 @@ export function Header() {
                 Gallery
               </Link>
             </li>
-            <li>
-              <Link
-                to="/students"
-                className="text-foreground/80 hover:text-foreground transition-colors duration-200 font-medium"
-              >
-                Students
-              </Link>
-            </li>
           </ul>
 
           <div className="flex items-center gap-4">
@@ -89,7 +81,7 @@ export function Header() {
               <Button
                 variant="outline"
                 size="sm"
-                className="rounded-full bg-white text-[#ff0419] border border-red-200 hover:bg-red-50 hover:text-[#ff0419] px-4 transition-all duration-300"
+                className="rounded-full bg-white text-blue-500 border border-blue-200 hover:bg-blue-50 hover:text-blue-600 px-4 transition-all duration-300"
               >
                 <Lock className="mr-2 h-3.5 w-3.5" />
                 Portal
@@ -153,21 +145,12 @@ export function Header() {
                   Gallery
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/students"
-                  className="text-2xl font-medium"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Students
-                </Link>
-              </li>
             </ul>
             <div className="mt-auto mb-12">
               <Link to="/portal" onClick={() => setMobileMenuOpen(false)}>
                 <Button
                   size="lg"
-                  className="w-full rounded-full bg-[#ff0419] hover:bg-red-600 text-white"
+                  className="w-full rounded-full bg-blue-500 hover:bg-blue-600 text-white"
                 >
                   <Lock className="mr-2 h-4 w-4" />
                   Portal
